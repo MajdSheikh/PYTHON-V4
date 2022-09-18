@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/play')
 def index():
-    return render_template("index.html")	
+    return render_template("index.html", times=3, color='blue')	
 
 
 
