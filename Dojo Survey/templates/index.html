@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        form {
+            border: 2px solid black;
+            padding: 20px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            
+        }
+        button {
+            color: white;
+            background-color: #76a5af;
+            box-shadow: 2px 2px black;
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<form action='/result' method='post'>
+
+    <div>
+        Your Name: <input type='text' name='name'>
+    </div>
+    <br>
+
+    <div>
+        <label for="location">Dojo location:</label>
+        <select name="location" id="location">
+        <option>San Jose</option>
+        <option>Somewhere else</option>
+        </select>
+    </div>
+    <br>
+
+    <div>
+        <label for="language">Favorite language: </label>
+        <select name="language" id="language">
+            <option>Python</option>
+            <option>Java</option>
+            <option>C#</option>
+        </select>
+    </div>
+    <br>
+
+    <div>
+        <label for="comment" >Comment (optional): </label>
+        <div>
+            <br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        </div>
+    </div>
+    <br>
+
+    <div>
+    <button type='submit' value='Button'>Button</button>
+    </div>
+    <br>
+
+</form>
+</div>
+
+
+</body>
+</html>
